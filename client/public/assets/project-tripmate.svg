@@ -1,0 +1,23 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" fill="#081110"/>
+  <circle cx="988" cy="100" r="160" fill="#34D399" fill-opacity="0.14"/>
+  <rect x="68" y="66" width="1064" height="628" rx="42" fill="#101B1A" stroke="url(#paint0_linear)" stroke-opacity="0.25"/>
+  <rect x="124" y="126" width="952" height="156" rx="28" fill="#132321"/>
+  <rect x="124" y="312" width="450" height="326" rx="28" fill="#142523"/>
+  <rect x="602" y="312" width="474" height="326" rx="28" fill="#142523"/>
+  <path d="M202 235C202 235 324 140 430 178C536 216 626 240 766 173C906 106 1002 148 1002 148" stroke="#8EE3C6" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="254" cy="446" r="82" fill="#1D3633"/>
+  <path d="M229 449L248 468L286 424" stroke="#8EE3C6" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="648" y="374" width="202" height="18" rx="9" fill="#223C38"/>
+  <rect x="648" y="416" width="292" height="18" rx="9" fill="#223C38"/>
+  <rect x="648" y="458" width="248" height="18" rx="9" fill="#1A322F"/>
+  <text x="132" y="176" fill="#FFFFFF" font-family="Poppins, sans-serif" font-size="30">TripMate Travel Planning App</text>
+  <text x="132" y="664" fill="#8EE3C6" font-family="Poppins, sans-serif" font-size="24" letter-spacing="6">ITINERARIES • RESPONSIVE UX</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="68" y1="66" x2="1132" y2="694" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D399"/>
+      <stop offset="0.58" stop-color="#A7F3D0"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+</svg>
