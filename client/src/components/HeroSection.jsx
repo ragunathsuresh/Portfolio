@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import ragunathPhoto from '../assets/ragunath.jpg'
+import ragunathPhoto from '../assets/ragunath-profile.jpg'
 
 function HeroSection() {
   return (
