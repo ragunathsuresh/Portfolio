@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Mail, MapPin, Send, CheckCircle2 } from 'lucide-react'
 import toast from 'react-hot-toast'
-import { sendMessage } from '../services/api'
+import emailjs from '@emailjs/browser'
 
 const initialState = {
   name: '',
@@ -35,13 +35,35 @@ function ContactSection() {
 
     try {
       setIsSubmitting(true)
-      await sendMessage(formData)
+      
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
+      if (!serviceId || !templateId || !publicKey) {
+        toast.error('EmailJS is not configured. Please check your .env file.')
+        setIsSubmitting(false)
+        return
+      }
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          reply_to: formData.email,
+          message: formData.message,
+        },
+        publicKey
+      )
+
       setIsSuccess(true)
       setFormData(initialState)
       toast.success('Message sent!')
       setTimeout(() => setIsSuccess(false), 5000)
     } catch (err) {
-      toast.error(err.response?.data?.message || 'Failed to send message.')
+      console.error('EmailJS error:', err)
+      toast.error('Failed to send message.')
     } finally {
       setIsSubmitting(false)
     }
