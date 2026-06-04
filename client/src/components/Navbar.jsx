@@ -13,7 +13,7 @@ function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#home" className="group flex items-center gap-2 font-display text-xl font-bold text-white">
-          <span className="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">RS.</span>
+          <span className="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Ragunath Suresh</span>
         </a>
 
         {/* Desktop Nav */}
