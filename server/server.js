@@ -24,6 +24,10 @@ app.get('/api/health', (_req, res) => {
   res.status(200).json({ success: true, message: 'Portfolio API is running.' })
 })
 
+app.get('/', (req, res) => {
+  res.send('Portfolio API is running.')
+})
+
 app.use('/api/projects', projectRoutes)
 app.use('/api/experience', experienceRoutes)
 app.use('/api/contact', contactRoutes)
