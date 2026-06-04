@@ -15,7 +15,7 @@ connectDB()
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL?.split(',') || '*',
+    origin: "*",
   })
 )
 app.use(express.json())
